@@ -21,7 +21,7 @@ const Page: React.FC = () => {
   const router = useRouter();
   const { isSignedIn } = useUser();
 
-  // Redirect function: if user is signed in, go to Dashboard; otherwise, go to Sign In.
+
   const handleRedirect = () => {
     if (isSignedIn) {
       router.push("/dashboard");
@@ -32,7 +32,7 @@ const Page: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-purple-900 to-gray-900">
-      {/* Navbar */}
+  
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
@@ -78,7 +78,7 @@ const Page: React.FC = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+  
       <main>
         <section className="container mx-auto px-6 py-20 text-center">
           <motion.h1
@@ -179,7 +179,7 @@ const Page: React.FC = () => {
           </div>
         </section>
 
-        {/* How It Works Section */}
+     
         <section id="how-it-works" className="container mx-auto px-6 py-20">
           <motion.h2
             initial={{ opacity: 0 }}
@@ -246,7 +246,7 @@ const Page: React.FC = () => {
           </div>
         </section>
 
-        {/* CTA Section */}
+      
         <section className="container mx-auto px-6 py-20">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -270,7 +270,7 @@ const Page: React.FC = () => {
         </section>
       </main>
 
-      {/* Footer */}
+ 
       <footer className="border-t border-gray-800">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
